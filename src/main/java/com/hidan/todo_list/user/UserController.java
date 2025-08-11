@@ -17,7 +17,7 @@ public class UserController {
     private IUserRepository userRepository;
 
 
-    @RequestMapping("/")
+    @RequestMapping("/create")
     public ResponseEntity create(@RequestBody UserModel userModel){
 
         var user = this.userRepository.findByUsername(userModel.getUsername());
